@@ -24,7 +24,11 @@ const routes: Routes = [
   },
   {
     path: 'user-detail',
-    loadChildren: () => import('./user-detail/user-detail.module').then( m => m.UserDetailPageModule)
+    loadChildren: () => import('../pages/user-detail/user-detail.module').then( m => m.UserDetailPageModule)
+  },
+  {
+    path: 'actividades',
+    loadChildren: () => import('./actividades/actividades.module').then( m => m.ActividadesPageModule)
   }
 ];
 @NgModule({
