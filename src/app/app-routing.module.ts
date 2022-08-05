@@ -9,6 +9,22 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'mis-actividades',
+    loadChildren: () => import('./mis-actividades/mis-actividades.module').then( m => m.MisActividadesPageModule)
+  },
+  {
+    path: 'setup',
+    loadChildren: () => import('./setup/setup.module').then( m => m.SetupPageModule)
+  },
+  {
+    path: 'actividad-detail',
+    loadChildren: () => import('./actividad-detail/actividad-detail.module').then( m => m.ActividadDetailPageModule)
+  },
+  {
+    path: 'user-detail',
+    loadChildren: () => import('./user-detail/user-detail.module').then( m => m.UserDetailPageModule)
   }
 ];
 @NgModule({
